@@ -1,0 +1,31 @@
+public:void Jazda(int gdzie_jedziemy)
+	{
+		this->Parter->Stop();
+		if (pietro > gdzie_jedziemy) {
+			this->zegar_dol->Start();
+		}
+		if (pietro < gdzie_jedziemy) {
+			this->zegar_gora->Start();
+		}
+
+		if (pietro == gdzie_jedziemy) {
+
+			Wsiadanie(pietro);
+
+			if (numer_kolejki + 1 < Kolejka.size()) {
+				postoj->Start();
+			}
+			else {	
+				for (int m = 0; m < 5; m++) {
+					if (ekrany[25 + m] != 0) Kolejka.push_back(m);
+				}
+				if (numer_kolejki + 1 < Kolejka.size()) {
+					postoj->Start();
+				}
+				else{
+					biernie->Start();
+					this->Parter->Start();
+				}
+			}
+		}
+	}
