@@ -1,0 +1,81 @@
+private: System::Void zegar_gora_Tick(System::Object^  sender, System::EventArgs^  e) {
+		this->pictureBox2->Top += -3;
+		this->ekran_pietro->Top += -3;
+		this->winda0->Top += -3;
+		this->winda1->Top += -3;
+		this->winda2->Top += -3;
+		this->winda3->Top += -3;
+		this->winda4->Top += -3;
+		this->label31->Top += -3;
+		this->label32->Top += -3;
+		this->label30->Top += -3;
+		this->label26->Top += -3;
+		this->label27->Top += -3;
+		this->label28->Top += -3;
+		this->label29->Top += -3;
+		czas++;
+		if (czas == 38) {
+			this->zegar_gora->Stop();
+			czas = 0;
+			pietro++;
+			this->ekran_pietro->Text = Convert::ToString(pietro);
+			Jazda(Kolejka[numer_kolejki]);
+		}
+		}
+private: System::Void zegar_dol_Tick(System::Object^  sender, System::EventArgs^  e) {
+	this->pictureBox2->Top += 3;
+	this->ekran_pietro->Top += 3;
+	this->winda0->Top += 3;
+	this->winda1->Top += 3;
+	this->winda2->Top += 3;
+	this->winda3->Top += 3;
+	this->winda4->Top += 3;
+	this->label31->Top += 3;
+	this->label32->Top += 3;
+	this->label30->Top += 3;
+	this->label26->Top += 3;
+	this->label27->Top += 3;
+	this->label28->Top += 3;
+	this->label29->Top += 3;
+	czas++;
+	if (czas == 38) {
+		this->zegar_dol->Stop();
+		czas = 0;
+		pietro--;
+		this->ekran_pietro->Text = Convert::ToString(pietro);
+		Jazda(Kolejka[numer_kolejki]);
+	}
+	
+}
+
+
+private: System::Void Parter_Tick_1(System::Object^  sender, System::EventArgs^  e) {
+	czas++;
+	if (czas == 1) {
+		Parter->Stop();
+		czas = 0;
+		numer_kolejki++;
+		Kolejka.push_back(0);
+		Jazda(Kolejka[numer_kolejki]);
+	}
+
+}
+
+private: System::Void postoj_Tick(System::Object^  sender, System::EventArgs^  e) {
+	czas++;
+	if (czas == 2) {
+		this->postoj->Stop();
+		czas = 0;
+		numer_kolejki++;
+		Jazda(Kolejka[numer_kolejki]);
+	}
+	
+}
+private: System::Void biernie_Tick(System::Object^  sender, System::EventArgs^  e) {
+	
+	if (Kolejka.size() - numer_kolejki > 1) {
+		biernie->Stop();
+		Wsiadanie(pietro);
+		Jazda(Kolejka[numer_kolejki]);
+	}
+}
