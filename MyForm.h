@@ -149,7 +149,6 @@ private: System::Windows::Forms::Label^  label50;
 private: System::Windows::Forms::Label^  label51;
 private: System::Windows::Forms::Label^  label52;
 private: System::Windows::Forms::Label^  label53;
-private: System::Windows::Forms::Timer^  timer1;
 	private: System::ComponentModel::IContainer^  components;
 
 	public:
@@ -327,7 +326,6 @@ private: System::Windows::Forms::Timer^  timer1;
 			this->label51 = (gcnew System::Windows::Forms::Label());
 			this->label52 = (gcnew System::Windows::Forms::Label());
 			this->label53 = (gcnew System::Windows::Forms::Label());
-			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->ludzik))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
@@ -336,10 +334,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(697, 650);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(4);
+			this->pictureBox2->Location = System::Drawing::Point(523, 528);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(437, 111);
+			this->pictureBox2->Size = System::Drawing::Size(328, 90);
 			this->pictureBox2->TabIndex = 1;
 			this->pictureBox2->TabStop = false;
 			// 
@@ -363,10 +360,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// ekran_pietro
 			// 
-			this->ekran_pietro->Location = System::Drawing::Point(1084, 661);
-			this->ekran_pietro->Margin = System::Windows::Forms::Padding(4);
+			this->ekran_pietro->Location = System::Drawing::Point(813, 537);
 			this->ekran_pietro->Name = L"ekran_pietro";
-			this->ekran_pietro->Size = System::Drawing::Size(37, 22);
+			this->ekran_pietro->Size = System::Drawing::Size(29, 20);
 			this->ekran_pietro->TabIndex = 6;
 			// 
 			// Parter
@@ -376,18 +372,16 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// Masa
 			// 
-			this->Masa->Location = System::Drawing::Point(1145, 630);
-			this->Masa->Margin = System::Windows::Forms::Padding(4);
+			this->Masa->Location = System::Drawing::Point(859, 512);
 			this->Masa->Name = L"Masa";
-			this->Masa->Size = System::Drawing::Size(176, 22);
+			this->Masa->Size = System::Drawing::Size(133, 20);
 			this->Masa->TabIndex = 9;
 			// 
 			// p01
 			// 
-			this->p01->Location = System::Drawing::Point(16, 556);
-			this->p01->Margin = System::Windows::Forms::Padding(4);
+			this->p01->Location = System::Drawing::Point(12, 452);
 			this->p01->Name = L"p01";
-			this->p01->Size = System::Drawing::Size(32, 30);
+			this->p01->Size = System::Drawing::Size(24, 24);
 			this->p01->TabIndex = 10;
 			this->p01->Text = L"1";
 			this->p01->UseVisualStyleBackColor = true;
@@ -395,10 +389,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p02
 			// 
-			this->p02->Location = System::Drawing::Point(16, 593);
-			this->p02->Margin = System::Windows::Forms::Padding(4);
+			this->p02->Location = System::Drawing::Point(12, 482);
 			this->p02->Name = L"p02";
-			this->p02->Size = System::Drawing::Size(32, 30);
+			this->p02->Size = System::Drawing::Size(24, 24);
 			this->p02->TabIndex = 11;
 			this->p02->Text = L"2";
 			this->p02->UseVisualStyleBackColor = true;
@@ -406,10 +399,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p03
 			// 
-			this->p03->Location = System::Drawing::Point(16, 630);
-			this->p03->Margin = System::Windows::Forms::Padding(4);
+			this->p03->Location = System::Drawing::Point(12, 512);
 			this->p03->Name = L"p03";
-			this->p03->Size = System::Drawing::Size(32, 30);
+			this->p03->Size = System::Drawing::Size(24, 24);
 			this->p03->TabIndex = 12;
 			this->p03->Text = L"3";
 			this->p03->UseVisualStyleBackColor = true;
@@ -417,10 +409,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p04
 			// 
-			this->p04->Location = System::Drawing::Point(16, 667);
-			this->p04->Margin = System::Windows::Forms::Padding(4);
+			this->p04->Location = System::Drawing::Point(12, 542);
 			this->p04->Name = L"p04";
-			this->p04->Size = System::Drawing::Size(32, 30);
+			this->p04->Size = System::Drawing::Size(24, 24);
 			this->p04->TabIndex = 13;
 			this->p04->Text = L"4";
 			this->p04->UseVisualStyleBackColor = true;
@@ -428,100 +419,88 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// t01
 			// 
-			this->t01->Location = System::Drawing::Point(152, 630);
-			this->t01->Margin = System::Windows::Forms::Padding(4);
+			this->t01->Location = System::Drawing::Point(114, 512);
 			this->t01->Name = L"t01";
-			this->t01->Size = System::Drawing::Size(67, 22);
+			this->t01->Size = System::Drawing::Size(51, 20);
 			this->t01->TabIndex = 14;
 			// 
 			// t02
 			// 
-			this->t02->Location = System::Drawing::Point(228, 630);
-			this->t02->Margin = System::Windows::Forms::Padding(4);
+			this->t02->Location = System::Drawing::Point(171, 512);
 			this->t02->Name = L"t02";
-			this->t02->Size = System::Drawing::Size(72, 22);
+			this->t02->Size = System::Drawing::Size(55, 20);
 			this->t02->TabIndex = 15;
 			// 
 			// t03
 			// 
-			this->t03->Location = System::Drawing::Point(309, 630);
-			this->t03->Margin = System::Windows::Forms::Padding(4);
+			this->t03->Location = System::Drawing::Point(232, 512);
 			this->t03->Name = L"t03";
-			this->t03->Size = System::Drawing::Size(72, 22);
+			this->t03->Size = System::Drawing::Size(55, 20);
 			this->t03->TabIndex = 16;
 			// 
 			// t04
 			// 
-			this->t04->Location = System::Drawing::Point(391, 630);
-			this->t04->Margin = System::Windows::Forms::Padding(4);
+			this->t04->Location = System::Drawing::Point(293, 512);
 			this->t04->Name = L"t04";
-			this->t04->Size = System::Drawing::Size(72, 22);
+			this->t04->Size = System::Drawing::Size(55, 20);
 			this->t04->TabIndex = 17;
 			// 
 			// winda0
 			// 
-			this->winda0->Location = System::Drawing::Point(751, 716);
-			this->winda0->Margin = System::Windows::Forms::Padding(4);
+			this->winda0->Location = System::Drawing::Point(563, 582);
 			this->winda0->Name = L"winda0";
-			this->winda0->Size = System::Drawing::Size(61, 22);
+			this->winda0->Size = System::Drawing::Size(47, 20);
 			this->winda0->TabIndex = 18;
 			// 
 			// w1
 			// 
-			this->w1->Location = System::Drawing::Point(1157, 577);
-			this->w1->Margin = System::Windows::Forms::Padding(4);
+			this->w1->Location = System::Drawing::Point(868, 469);
 			this->w1->Name = L"w1";
-			this->w1->Size = System::Drawing::Size(153, 22);
+			this->w1->Size = System::Drawing::Size(116, 20);
 			this->w1->TabIndex = 19;
 			// 
 			// w2
 			// 
-			this->w2->Location = System::Drawing::Point(517, 427);
-			this->w2->Margin = System::Windows::Forms::Padding(4);
+			this->w2->Location = System::Drawing::Point(388, 347);
 			this->w2->Name = L"w2";
-			this->w2->Size = System::Drawing::Size(153, 22);
+			this->w2->Size = System::Drawing::Size(116, 20);
 			this->w2->TabIndex = 20;
 			// 
 			// w3
 			// 
-			this->w3->Location = System::Drawing::Point(1157, 299);
-			this->w3->Margin = System::Windows::Forms::Padding(4);
+			this->w3->Location = System::Drawing::Point(868, 243);
 			this->w3->Name = L"w3";
-			this->w3->Size = System::Drawing::Size(153, 22);
+			this->w3->Size = System::Drawing::Size(116, 20);
 			this->w3->TabIndex = 21;
 			// 
 			// w4
 			// 
-			this->w4->Location = System::Drawing::Point(517, 150);
-			this->w4->Margin = System::Windows::Forms::Padding(4);
+			this->w4->Location = System::Drawing::Point(388, 122);
 			this->w4->Name = L"w4";
-			this->w4->Size = System::Drawing::Size(153, 22);
+			this->w4->Size = System::Drawing::Size(116, 20);
 			this->w4->TabIndex = 22;
 			// 
 			// w0
 			// 
-			this->w0->Location = System::Drawing::Point(517, 716);
-			this->w0->Margin = System::Windows::Forms::Padding(4);
+			this->w0->Location = System::Drawing::Point(388, 582);
 			this->w0->Name = L"w0";
-			this->w0->Size = System::Drawing::Size(153, 22);
+			this->w0->Size = System::Drawing::Size(116, 20);
 			this->w0->TabIndex = 23;
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-1, 4);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
+			this->pictureBox1->Location = System::Drawing::Point(-1, 3);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(1780, 784);
+			this->pictureBox1->Size = System::Drawing::Size(1335, 637);
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
 			// 
 			// p10
 			// 
-			this->p10->Location = System::Drawing::Point(1707, 383);
-			this->p10->Margin = System::Windows::Forms::Padding(4);
+			this->p10->Location = System::Drawing::Point(1280, 311);
 			this->p10->Name = L"p10";
-			this->p10->Size = System::Drawing::Size(32, 30);
+			this->p10->Size = System::Drawing::Size(24, 24);
 			this->p10->TabIndex = 24;
 			this->p10->Text = L"0";
 			this->p10->UseVisualStyleBackColor = true;
@@ -529,10 +508,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p12
 			// 
-			this->p12->Location = System::Drawing::Point(1707, 420);
-			this->p12->Margin = System::Windows::Forms::Padding(4);
+			this->p12->Location = System::Drawing::Point(1280, 341);
 			this->p12->Name = L"p12";
-			this->p12->Size = System::Drawing::Size(32, 30);
+			this->p12->Size = System::Drawing::Size(24, 24);
 			this->p12->TabIndex = 25;
 			this->p12->Text = L"2";
 			this->p12->UseVisualStyleBackColor = true;
@@ -540,10 +518,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p13
 			// 
-			this->p13->Location = System::Drawing::Point(1707, 457);
-			this->p13->Margin = System::Windows::Forms::Padding(4);
+			this->p13->Location = System::Drawing::Point(1280, 371);
 			this->p13->Name = L"p13";
-			this->p13->Size = System::Drawing::Size(32, 30);
+			this->p13->Size = System::Drawing::Size(24, 24);
 			this->p13->TabIndex = 26;
 			this->p13->Text = L"3";
 			this->p13->UseVisualStyleBackColor = true;
@@ -551,10 +528,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p14
 			// 
-			this->p14->Location = System::Drawing::Point(1707, 494);
-			this->p14->Margin = System::Windows::Forms::Padding(4);
+			this->p14->Location = System::Drawing::Point(1280, 401);
 			this->p14->Name = L"p14";
-			this->p14->Size = System::Drawing::Size(32, 30);
+			this->p14->Size = System::Drawing::Size(24, 24);
 			this->p14->TabIndex = 27;
 			this->p14->Text = L"4";
 			this->p14->UseVisualStyleBackColor = true;
@@ -562,10 +538,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p20
 			// 
-			this->p20->Location = System::Drawing::Point(16, 277);
-			this->p20->Margin = System::Windows::Forms::Padding(4);
+			this->p20->Location = System::Drawing::Point(12, 225);
 			this->p20->Name = L"p20";
-			this->p20->Size = System::Drawing::Size(32, 30);
+			this->p20->Size = System::Drawing::Size(24, 24);
 			this->p20->TabIndex = 28;
 			this->p20->Text = L"0";
 			this->p20->UseVisualStyleBackColor = true;
@@ -573,10 +548,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p21
 			// 
-			this->p21->Location = System::Drawing::Point(16, 314);
-			this->p21->Margin = System::Windows::Forms::Padding(4);
+			this->p21->Location = System::Drawing::Point(12, 255);
 			this->p21->Name = L"p21";
-			this->p21->Size = System::Drawing::Size(32, 30);
+			this->p21->Size = System::Drawing::Size(24, 24);
 			this->p21->TabIndex = 29;
 			this->p21->Text = L"1";
 			this->p21->UseVisualStyleBackColor = true;
@@ -584,10 +558,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p23
 			// 
-			this->p23->Location = System::Drawing::Point(16, 351);
-			this->p23->Margin = System::Windows::Forms::Padding(4);
+			this->p23->Location = System::Drawing::Point(12, 285);
 			this->p23->Name = L"p23";
-			this->p23->Size = System::Drawing::Size(32, 30);
+			this->p23->Size = System::Drawing::Size(24, 24);
 			this->p23->TabIndex = 30;
 			this->p23->Text = L"3";
 			this->p23->UseVisualStyleBackColor = true;
@@ -595,10 +568,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p24
 			// 
-			this->p24->Location = System::Drawing::Point(16, 388);
-			this->p24->Margin = System::Windows::Forms::Padding(4);
+			this->p24->Location = System::Drawing::Point(12, 315);
 			this->p24->Name = L"p24";
-			this->p24->Size = System::Drawing::Size(32, 30);
+			this->p24->Size = System::Drawing::Size(24, 24);
 			this->p24->TabIndex = 31;
 			this->p24->Text = L"4";
 			this->p24->UseVisualStyleBackColor = true;
@@ -606,10 +578,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p30
 			// 
-			this->p30->Location = System::Drawing::Point(1707, 98);
-			this->p30->Margin = System::Windows::Forms::Padding(4);
+			this->p30->Location = System::Drawing::Point(1280, 80);
 			this->p30->Name = L"p30";
-			this->p30->Size = System::Drawing::Size(32, 30);
+			this->p30->Size = System::Drawing::Size(24, 24);
 			this->p30->TabIndex = 32;
 			this->p30->Text = L"0";
 			this->p30->UseVisualStyleBackColor = true;
@@ -617,10 +588,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p31
 			// 
-			this->p31->Location = System::Drawing::Point(1707, 135);
-			this->p31->Margin = System::Windows::Forms::Padding(4);
+			this->p31->Location = System::Drawing::Point(1280, 110);
 			this->p31->Name = L"p31";
-			this->p31->Size = System::Drawing::Size(32, 30);
+			this->p31->Size = System::Drawing::Size(24, 24);
 			this->p31->TabIndex = 33;
 			this->p31->Text = L"1";
 			this->p31->UseVisualStyleBackColor = true;
@@ -628,10 +598,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p32
 			// 
-			this->p32->Location = System::Drawing::Point(1707, 172);
-			this->p32->Margin = System::Windows::Forms::Padding(4);
+			this->p32->Location = System::Drawing::Point(1280, 140);
 			this->p32->Name = L"p32";
-			this->p32->Size = System::Drawing::Size(32, 30);
+			this->p32->Size = System::Drawing::Size(24, 24);
 			this->p32->TabIndex = 34;
 			this->p32->Text = L"2";
 			this->p32->UseVisualStyleBackColor = true;
@@ -639,10 +608,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p34
 			// 
-			this->p34->Location = System::Drawing::Point(1707, 209);
-			this->p34->Margin = System::Windows::Forms::Padding(4);
+			this->p34->Location = System::Drawing::Point(1280, 170);
 			this->p34->Name = L"p34";
-			this->p34->Size = System::Drawing::Size(32, 30);
+			this->p34->Size = System::Drawing::Size(24, 24);
 			this->p34->TabIndex = 35;
 			this->p34->Text = L"4";
 			this->p34->UseVisualStyleBackColor = true;
@@ -650,10 +618,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p40
 			// 
-			this->p40->Location = System::Drawing::Point(16, 23);
-			this->p40->Margin = System::Windows::Forms::Padding(4);
+			this->p40->Location = System::Drawing::Point(12, 19);
 			this->p40->Name = L"p40";
-			this->p40->Size = System::Drawing::Size(32, 30);
+			this->p40->Size = System::Drawing::Size(24, 24);
 			this->p40->TabIndex = 36;
 			this->p40->Text = L"0";
 			this->p40->UseVisualStyleBackColor = true;
@@ -661,10 +628,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p41
 			// 
-			this->p41->Location = System::Drawing::Point(16, 60);
-			this->p41->Margin = System::Windows::Forms::Padding(4);
+			this->p41->Location = System::Drawing::Point(12, 49);
 			this->p41->Name = L"p41";
-			this->p41->Size = System::Drawing::Size(32, 30);
+			this->p41->Size = System::Drawing::Size(24, 24);
 			this->p41->TabIndex = 37;
 			this->p41->Text = L"1";
 			this->p41->UseVisualStyleBackColor = true;
@@ -672,10 +638,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p42
 			// 
-			this->p42->Location = System::Drawing::Point(16, 94);
-			this->p42->Margin = System::Windows::Forms::Padding(4);
+			this->p42->Location = System::Drawing::Point(12, 76);
 			this->p42->Name = L"p42";
-			this->p42->Size = System::Drawing::Size(32, 30);
+			this->p42->Size = System::Drawing::Size(24, 24);
 			this->p42->TabIndex = 38;
 			this->p42->Text = L"2";
 			this->p42->UseVisualStyleBackColor = true;
@@ -683,10 +648,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// p43
 			// 
-			this->p43->Location = System::Drawing::Point(16, 130);
-			this->p43->Margin = System::Windows::Forms::Padding(4);
+			this->p43->Location = System::Drawing::Point(12, 106);
 			this->p43->Name = L"p43";
-			this->p43->Size = System::Drawing::Size(32, 30);
+			this->p43->Size = System::Drawing::Size(24, 24);
 			this->p43->TabIndex = 39;
 			this->p43->Text = L"3";
 			this->p43->UseVisualStyleBackColor = true;
@@ -694,170 +658,149 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// t10
 			// 
-			this->t10->Location = System::Drawing::Point(1251, 494);
-			this->t10->Margin = System::Windows::Forms::Padding(4);
+			this->t10->Location = System::Drawing::Point(938, 401);
 			this->t10->Name = L"t10";
-			this->t10->Size = System::Drawing::Size(67, 22);
+			this->t10->Size = System::Drawing::Size(51, 20);
 			this->t10->TabIndex = 40;
 			// 
 			// t12
 			// 
-			this->t12->Location = System::Drawing::Point(1327, 494);
-			this->t12->Margin = System::Windows::Forms::Padding(4);
+			this->t12->Location = System::Drawing::Point(995, 401);
 			this->t12->Name = L"t12";
-			this->t12->Size = System::Drawing::Size(67, 22);
+			this->t12->Size = System::Drawing::Size(51, 20);
 			this->t12->TabIndex = 41;
 			// 
 			// t13
 			// 
-			this->t13->Location = System::Drawing::Point(1403, 494);
-			this->t13->Margin = System::Windows::Forms::Padding(4);
+			this->t13->Location = System::Drawing::Point(1052, 401);
 			this->t13->Name = L"t13";
-			this->t13->Size = System::Drawing::Size(67, 22);
+			this->t13->Size = System::Drawing::Size(51, 20);
 			this->t13->TabIndex = 42;
 			// 
 			// t14
 			// 
-			this->t14->Location = System::Drawing::Point(1479, 494);
-			this->t14->Margin = System::Windows::Forms::Padding(4);
+			this->t14->Location = System::Drawing::Point(1109, 401);
 			this->t14->Name = L"t14";
-			this->t14->Size = System::Drawing::Size(67, 22);
+			this->t14->Size = System::Drawing::Size(51, 20);
 			this->t14->TabIndex = 43;
 			// 
 			// t20
 			// 
-			this->t20->Location = System::Drawing::Point(152, 351);
-			this->t20->Margin = System::Windows::Forms::Padding(4);
+			this->t20->Location = System::Drawing::Point(114, 285);
 			this->t20->Name = L"t20";
-			this->t20->Size = System::Drawing::Size(67, 22);
+			this->t20->Size = System::Drawing::Size(51, 20);
 			this->t20->TabIndex = 44;
 			// 
 			// t21
 			// 
-			this->t21->Location = System::Drawing::Point(228, 351);
-			this->t21->Margin = System::Windows::Forms::Padding(4);
+			this->t21->Location = System::Drawing::Point(171, 285);
 			this->t21->Name = L"t21";
-			this->t21->Size = System::Drawing::Size(67, 22);
+			this->t21->Size = System::Drawing::Size(51, 20);
 			this->t21->TabIndex = 45;
 			// 
 			// t23
 			// 
-			this->t23->Location = System::Drawing::Point(304, 351);
-			this->t23->Margin = System::Windows::Forms::Padding(4);
+			this->t23->Location = System::Drawing::Point(228, 285);
 			this->t23->Name = L"t23";
-			this->t23->Size = System::Drawing::Size(67, 22);
+			this->t23->Size = System::Drawing::Size(51, 20);
 			this->t23->TabIndex = 46;
 			// 
 			// t24
 			// 
-			this->t24->Location = System::Drawing::Point(380, 351);
-			this->t24->Margin = System::Windows::Forms::Padding(4);
+			this->t24->Location = System::Drawing::Point(285, 285);
 			this->t24->Name = L"t24";
-			this->t24->Size = System::Drawing::Size(67, 22);
+			this->t24->Size = System::Drawing::Size(51, 20);
 			this->t24->TabIndex = 47;
 			// 
 			// t30
 			// 
-			this->t30->Location = System::Drawing::Point(1251, 201);
-			this->t30->Margin = System::Windows::Forms::Padding(4);
+			this->t30->Location = System::Drawing::Point(938, 163);
 			this->t30->Name = L"t30";
-			this->t30->Size = System::Drawing::Size(67, 22);
+			this->t30->Size = System::Drawing::Size(51, 20);
 			this->t30->TabIndex = 48;
 			// 
 			// t31
 			// 
-			this->t31->Location = System::Drawing::Point(1327, 201);
-			this->t31->Margin = System::Windows::Forms::Padding(4);
+			this->t31->Location = System::Drawing::Point(995, 163);
 			this->t31->Name = L"t31";
-			this->t31->Size = System::Drawing::Size(67, 22);
+			this->t31->Size = System::Drawing::Size(51, 20);
 			this->t31->TabIndex = 49;
 			// 
 			// t32
 			// 
-			this->t32->Location = System::Drawing::Point(1403, 201);
-			this->t32->Margin = System::Windows::Forms::Padding(4);
+			this->t32->Location = System::Drawing::Point(1052, 163);
 			this->t32->Name = L"t32";
-			this->t32->Size = System::Drawing::Size(67, 22);
+			this->t32->Size = System::Drawing::Size(51, 20);
 			this->t32->TabIndex = 50;
 			// 
 			// t34
 			// 
-			this->t34->Location = System::Drawing::Point(1479, 201);
-			this->t34->Margin = System::Windows::Forms::Padding(4);
+			this->t34->Location = System::Drawing::Point(1109, 163);
 			this->t34->Name = L"t34";
-			this->t34->Size = System::Drawing::Size(67, 22);
+			this->t34->Size = System::Drawing::Size(51, 20);
 			this->t34->TabIndex = 51;
 			// 
 			// t40
 			// 
-			this->t40->Location = System::Drawing::Point(152, 98);
-			this->t40->Margin = System::Windows::Forms::Padding(4);
+			this->t40->Location = System::Drawing::Point(114, 80);
 			this->t40->Name = L"t40";
-			this->t40->Size = System::Drawing::Size(67, 22);
+			this->t40->Size = System::Drawing::Size(51, 20);
 			this->t40->TabIndex = 52;
 			// 
 			// t41
 			// 
-			this->t41->Location = System::Drawing::Point(228, 98);
-			this->t41->Margin = System::Windows::Forms::Padding(4);
+			this->t41->Location = System::Drawing::Point(171, 80);
 			this->t41->Name = L"t41";
-			this->t41->Size = System::Drawing::Size(67, 22);
+			this->t41->Size = System::Drawing::Size(51, 20);
 			this->t41->TabIndex = 53;
 			// 
 			// t42
 			// 
-			this->t42->Location = System::Drawing::Point(304, 98);
-			this->t42->Margin = System::Windows::Forms::Padding(4);
+			this->t42->Location = System::Drawing::Point(228, 80);
 			this->t42->Name = L"t42";
-			this->t42->Size = System::Drawing::Size(67, 22);
+			this->t42->Size = System::Drawing::Size(51, 20);
 			this->t42->TabIndex = 54;
 			// 
 			// t43
 			// 
-			this->t43->Location = System::Drawing::Point(380, 98);
-			this->t43->Margin = System::Windows::Forms::Padding(4);
+			this->t43->Location = System::Drawing::Point(285, 80);
 			this->t43->Name = L"t43";
-			this->t43->Size = System::Drawing::Size(67, 22);
+			this->t43->Size = System::Drawing::Size(51, 20);
 			this->t43->TabIndex = 55;
 			// 
 			// r0
 			// 
-			this->r0->Location = System::Drawing::Point(585, 494);
-			this->r0->Margin = System::Windows::Forms::Padding(4);
+			this->r0->Location = System::Drawing::Point(439, 401);
 			this->r0->Name = L"r0";
-			this->r0->Size = System::Drawing::Size(97, 22);
+			this->r0->Size = System::Drawing::Size(74, 20);
 			this->r0->TabIndex = 56;
 			// 
 			// r1
 			// 
-			this->r1->Location = System::Drawing::Point(1157, 351);
-			this->r1->Margin = System::Windows::Forms::Padding(4);
+			this->r1->Location = System::Drawing::Point(868, 285);
 			this->r1->Name = L"r1";
-			this->r1->Size = System::Drawing::Size(97, 22);
+			this->r1->Size = System::Drawing::Size(74, 20);
 			this->r1->TabIndex = 57;
 			// 
 			// r2
 			// 
-			this->r2->Location = System::Drawing::Point(585, 204);
-			this->r2->Margin = System::Windows::Forms::Padding(4);
+			this->r2->Location = System::Drawing::Point(439, 166);
 			this->r2->Name = L"r2";
-			this->r2->Size = System::Drawing::Size(97, 22);
+			this->r2->Size = System::Drawing::Size(74, 20);
 			this->r2->TabIndex = 58;
 			// 
 			// r3
 			// 
-			this->r3->Location = System::Drawing::Point(1145, 81);
-			this->r3->Margin = System::Windows::Forms::Padding(4);
+			this->r3->Location = System::Drawing::Point(859, 66);
 			this->r3->Name = L"r3";
-			this->r3->Size = System::Drawing::Size(97, 22);
+			this->r3->Size = System::Drawing::Size(74, 20);
 			this->r3->TabIndex = 59;
 			// 
 			// r4
 			// 
-			this->r4->Location = System::Drawing::Point(585, 15);
-			this->r4->Margin = System::Windows::Forms::Padding(4);
+			this->r4->Location = System::Drawing::Point(439, 12);
 			this->r4->Name = L"r4";
-			this->r4->Size = System::Drawing::Size(97, 22);
+			this->r4->Size = System::Drawing::Size(74, 20);
 			this->r4->TabIndex = 60;
 			// 
 			// Liczniki
@@ -878,123 +821,110 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			// winda1
 			// 
-			this->winda1->Location = System::Drawing::Point(821, 716);
-			this->winda1->Margin = System::Windows::Forms::Padding(4);
+			this->winda1->Location = System::Drawing::Point(616, 582);
 			this->winda1->Name = L"winda1";
-			this->winda1->Size = System::Drawing::Size(56, 22);
+			this->winda1->Size = System::Drawing::Size(43, 20);
 			this->winda1->TabIndex = 61;
 			// 
 			// winda2
 			// 
-			this->winda2->Location = System::Drawing::Point(887, 716);
-			this->winda2->Margin = System::Windows::Forms::Padding(4);
+			this->winda2->Location = System::Drawing::Point(665, 582);
 			this->winda2->Name = L"winda2";
-			this->winda2->Size = System::Drawing::Size(60, 22);
+			this->winda2->Size = System::Drawing::Size(46, 20);
 			this->winda2->TabIndex = 62;
 			// 
 			// winda3
 			// 
-			this->winda3->Location = System::Drawing::Point(956, 716);
-			this->winda3->Margin = System::Windows::Forms::Padding(4);
+			this->winda3->Location = System::Drawing::Point(717, 582);
 			this->winda3->Name = L"winda3";
-			this->winda3->Size = System::Drawing::Size(55, 22);
+			this->winda3->Size = System::Drawing::Size(42, 20);
 			this->winda3->TabIndex = 63;
 			// 
 			// winda4
 			// 
-			this->winda4->Location = System::Drawing::Point(1020, 716);
-			this->winda4->Margin = System::Windows::Forms::Padding(4);
+			this->winda4->Location = System::Drawing::Point(765, 582);
 			this->winda4->Name = L"winda4";
-			this->winda4->Size = System::Drawing::Size(51, 22);
+			this->winda4->Size = System::Drawing::Size(39, 20);
 			this->winda4->TabIndex = 64;
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(224, 556);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(168, 452);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(159, 17);
+			this->label1->Size = System::Drawing::Size(119, 13);
 			this->label1->TabIndex = 65;
 			this->label1->Text = L"Osoby jadace na piętro:";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(1323, 427);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Location = System::Drawing::Point(992, 347);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(159, 17);
+			this->label2->Size = System::Drawing::Size(119, 13);
 			this->label2->TabIndex = 66;
 			this->label2->Text = L"Osoby jadace na piętro:";
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(224, 274);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Location = System::Drawing::Point(168, 223);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(159, 17);
+			this->label3->Size = System::Drawing::Size(119, 13);
 			this->label3->TabIndex = 67;
 			this->label3->Text = L"Osoby jadace na piętro:";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(1323, 122);
-			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Location = System::Drawing::Point(992, 99);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(159, 17);
+			this->label4->Size = System::Drawing::Size(119, 13);
 			this->label4->TabIndex = 68;
 			this->label4->Text = L"Osoby jadace na piętro:";
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(224, 23);
-			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label5->Location = System::Drawing::Point(168, 19);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(159, 17);
+			this->label5->Size = System::Drawing::Size(119, 13);
 			this->label5->TabIndex = 69;
 			this->label5->Text = L"Osoby jadace na piętro:";
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(177, 601);
-			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label6->Location = System::Drawing::Point(133, 488);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(16, 17);
+			this->label6->Size = System::Drawing::Size(13, 13);
 			this->label6->TabIndex = 70;
 			this->label6->Text = L"1";
 			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(251, 321);
-			this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label7->Location = System::Drawing::Point(188, 261);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(16, 17);
+			this->label7->Size = System::Drawing::Size(13, 13);
 			this->label7->TabIndex = 71;
 			this->label7->Text = L"1";
 			// 
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(1352, 164);
-			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label8->Location = System::Drawing::Point(1014, 133);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(16, 17);
+			this->label8->Size = System::Drawing::Size(13, 13);
 			this->label8->TabIndex = 72;
 			this->label8->Text = L"1";
 			// 
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(251, 53);
-			this->label9->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label9->Location = System::Drawing::Point(188, 43);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(16, 17);
+			this->label9->Size = System::Drawing::Size(13, 13);
 			this->label9->TabIndex = 73;
 			this->label9->Text = L"1";
 			// 
@@ -1002,10 +932,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label10->AutoSize = true;
 			this->label10->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label10->Location = System::Drawing::Point(251, 601);
-			this->label10->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label10->Location = System::Drawing::Point(188, 488);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(16, 17);
+			this->label10->Size = System::Drawing::Size(13, 13);
 			this->label10->TabIndex = 74;
 			this->label10->Text = L"2";
 			// 
@@ -1013,10 +942,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label11->AutoSize = true;
 			this->label11->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label11->Location = System::Drawing::Point(1352, 464);
-			this->label11->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label11->Location = System::Drawing::Point(1014, 377);
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(16, 17);
+			this->label11->Size = System::Drawing::Size(13, 13);
 			this->label11->TabIndex = 75;
 			this->label11->Text = L"2";
 			// 
@@ -1024,10 +952,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label12->AutoSize = true;
 			this->label12->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label12->Location = System::Drawing::Point(1425, 164);
-			this->label12->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label12->Location = System::Drawing::Point(1069, 133);
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(16, 17);
+			this->label12->Size = System::Drawing::Size(13, 13);
 			this->label12->TabIndex = 76;
 			this->label12->Text = L"2";
 			// 
@@ -1035,10 +962,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label13->AutoSize = true;
 			this->label13->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label13->Location = System::Drawing::Point(331, 53);
-			this->label13->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label13->Location = System::Drawing::Point(248, 43);
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(16, 17);
+			this->label13->Size = System::Drawing::Size(13, 13);
 			this->label13->TabIndex = 77;
 			this->label13->Text = L"2";
 			// 
@@ -1046,10 +972,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label14->AutoSize = true;
 			this->label14->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label14->Location = System::Drawing::Point(331, 601);
-			this->label14->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label14->Location = System::Drawing::Point(248, 488);
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(16, 17);
+			this->label14->Size = System::Drawing::Size(13, 13);
 			this->label14->TabIndex = 78;
 			this->label14->Text = L"3";
 			// 
@@ -1057,10 +982,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label15->AutoSize = true;
 			this->label15->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label15->Location = System::Drawing::Point(1425, 464);
-			this->label15->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label15->Location = System::Drawing::Point(1069, 377);
 			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(16, 17);
+			this->label15->Size = System::Drawing::Size(13, 13);
 			this->label15->TabIndex = 79;
 			this->label15->Text = L"3";
 			// 
@@ -1068,10 +992,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label16->AutoSize = true;
 			this->label16->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label16->Location = System::Drawing::Point(331, 321);
-			this->label16->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label16->Location = System::Drawing::Point(248, 261);
 			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(16, 17);
+			this->label16->Size = System::Drawing::Size(13, 13);
 			this->label16->TabIndex = 80;
 			this->label16->Text = L"3";
 			// 
@@ -1079,10 +1002,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label17->AutoSize = true;
 			this->label17->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label17->Location = System::Drawing::Point(405, 53);
-			this->label17->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label17->Location = System::Drawing::Point(304, 43);
 			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(16, 17);
+			this->label17->Size = System::Drawing::Size(13, 13);
 			this->label17->TabIndex = 81;
 			this->label17->Text = L"3";
 			// 
@@ -1090,10 +1012,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label18->AutoSize = true;
 			this->label18->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label18->Location = System::Drawing::Point(419, 601);
-			this->label18->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label18->Location = System::Drawing::Point(314, 488);
 			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(16, 17);
+			this->label18->Size = System::Drawing::Size(13, 13);
 			this->label18->TabIndex = 82;
 			this->label18->Text = L"4";
 			// 
@@ -1101,10 +1022,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label19->AutoSize = true;
 			this->label19->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label19->Location = System::Drawing::Point(1504, 464);
-			this->label19->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label19->Location = System::Drawing::Point(1128, 377);
 			this->label19->Name = L"label19";
-			this->label19->Size = System::Drawing::Size(16, 17);
+			this->label19->Size = System::Drawing::Size(13, 13);
 			this->label19->TabIndex = 83;
 			this->label19->Text = L"4";
 			// 
@@ -1112,10 +1032,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label20->AutoSize = true;
 			this->label20->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label20->Location = System::Drawing::Point(405, 321);
-			this->label20->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label20->Location = System::Drawing::Point(304, 261);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(16, 17);
+			this->label20->Size = System::Drawing::Size(13, 13);
 			this->label20->TabIndex = 84;
 			this->label20->Text = L"4";
 			// 
@@ -1123,10 +1042,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label21->AutoSize = true;
 			this->label21->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label21->Location = System::Drawing::Point(1504, 164);
-			this->label21->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label21->Location = System::Drawing::Point(1128, 133);
 			this->label21->Name = L"label21";
-			this->label21->Size = System::Drawing::Size(16, 17);
+			this->label21->Size = System::Drawing::Size(13, 13);
 			this->label21->TabIndex = 85;
 			this->label21->Text = L"4";
 			// 
@@ -1134,10 +1052,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label22->AutoSize = true;
 			this->label22->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label22->Location = System::Drawing::Point(1273, 464);
-			this->label22->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label22->Location = System::Drawing::Point(955, 377);
 			this->label22->Name = L"label22";
-			this->label22->Size = System::Drawing::Size(16, 17);
+			this->label22->Size = System::Drawing::Size(13, 13);
 			this->label22->TabIndex = 86;
 			this->label22->Text = L"0";
 			// 
@@ -1145,10 +1062,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label23->AutoSize = true;
 			this->label23->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label23->Location = System::Drawing::Point(177, 321);
-			this->label23->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label23->Location = System::Drawing::Point(133, 261);
 			this->label23->Name = L"label23";
-			this->label23->Size = System::Drawing::Size(16, 17);
+			this->label23->Size = System::Drawing::Size(13, 13);
 			this->label23->TabIndex = 87;
 			this->label23->Text = L"0";
 			// 
@@ -1156,10 +1072,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label24->AutoSize = true;
 			this->label24->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label24->Location = System::Drawing::Point(1273, 164);
-			this->label24->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label24->Location = System::Drawing::Point(955, 133);
 			this->label24->Name = L"label24";
-			this->label24->Size = System::Drawing::Size(16, 17);
+			this->label24->Size = System::Drawing::Size(13, 13);
 			this->label24->TabIndex = 88;
 			this->label24->Text = L"0";
 			// 
@@ -1167,30 +1082,27 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label25->AutoSize = true;
 			this->label25->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label25->Location = System::Drawing::Point(177, 53);
-			this->label25->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label25->Location = System::Drawing::Point(133, 43);
 			this->label25->Name = L"label25";
-			this->label25->Size = System::Drawing::Size(16, 17);
+			this->label25->Size = System::Drawing::Size(13, 13);
 			this->label25->TabIndex = 89;
 			this->label25->Text = L"0";
 			// 
 			// label26
 			// 
 			this->label26->AutoSize = true;
-			this->label26->Location = System::Drawing::Point(845, 697);
-			this->label26->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label26->Location = System::Drawing::Point(634, 566);
 			this->label26->Name = L"label26";
-			this->label26->Size = System::Drawing::Size(16, 17);
+			this->label26->Size = System::Drawing::Size(13, 13);
 			this->label26->TabIndex = 90;
 			this->label26->Text = L"1";
 			// 
 			// label27
 			// 
 			this->label27->AutoSize = true;
-			this->label27->Location = System::Drawing::Point(907, 697);
-			this->label27->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label27->Location = System::Drawing::Point(680, 566);
 			this->label27->Name = L"label27";
-			this->label27->Size = System::Drawing::Size(16, 17);
+			this->label27->Size = System::Drawing::Size(13, 13);
 			this->label27->TabIndex = 91;
 			this->label27->Text = L"2";
 			// 
@@ -1198,10 +1110,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label28->AutoSize = true;
 			this->label28->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label28->Location = System::Drawing::Point(977, 697);
-			this->label28->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label28->Location = System::Drawing::Point(733, 566);
 			this->label28->Name = L"label28";
-			this->label28->Size = System::Drawing::Size(16, 17);
+			this->label28->Size = System::Drawing::Size(13, 13);
 			this->label28->TabIndex = 92;
 			this->label28->Text = L"3";
 			// 
@@ -1209,10 +1120,9 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label29->AutoSize = true;
 			this->label29->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label29->Location = System::Drawing::Point(1036, 697);
-			this->label29->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label29->Location = System::Drawing::Point(777, 566);
 			this->label29->Name = L"label29";
-			this->label29->Size = System::Drawing::Size(16, 17);
+			this->label29->Size = System::Drawing::Size(13, 13);
 			this->label29->TabIndex = 93;
 			this->label29->Text = L"4";
 			// 
@@ -1220,249 +1130,224 @@ private: System::Windows::Forms::Timer^  timer1;
 			// 
 			this->label30->AutoSize = true;
 			this->label30->Cursor = System::Windows::Forms::Cursors::Default;
-			this->label30->Location = System::Drawing::Point(772, 697);
-			this->label30->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label30->Location = System::Drawing::Point(579, 566);
 			this->label30->Name = L"label30";
-			this->label30->Size = System::Drawing::Size(16, 17);
+			this->label30->Size = System::Drawing::Size(13, 13);
 			this->label30->TabIndex = 94;
 			this->label30->Text = L"0";
 			// 
 			// label31
 			// 
 			this->label31->AutoSize = true;
-			this->label31->Location = System::Drawing::Point(720, 670);
-			this->label31->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label31->Location = System::Drawing::Point(540, 544);
 			this->label31->Name = L"label31";
-			this->label31->Size = System::Drawing::Size(159, 17);
+			this->label31->Size = System::Drawing::Size(119, 13);
 			this->label31->TabIndex = 95;
 			this->label31->Text = L"Osoby jadace na pietro:";
 			// 
 			// label32
 			// 
 			this->label32->AutoSize = true;
-			this->label32->Location = System::Drawing::Point(1027, 665);
-			this->label32->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label32->Location = System::Drawing::Point(770, 540);
 			this->label32->Name = L"label32";
-			this->label32->Size = System::Drawing::Size(49, 17);
+			this->label32->Size = System::Drawing::Size(37, 13);
 			this->label32->TabIndex = 96;
 			this->label32->Text = L"Piętro:";
 			// 
 			// label33
 			// 
 			this->label33->AutoSize = true;
-			this->label33->Location = System::Drawing::Point(487, 23);
-			this->label33->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label33->Location = System::Drawing::Point(365, 19);
 			this->label33->Name = L"label33";
-			this->label33->Size = System::Drawing::Size(92, 17);
+			this->label33->Size = System::Drawing::Size(68, 13);
 			this->label33->TabIndex = 97;
 			this->label33->Text = L"Osoby razem";
 			// 
 			// label34
 			// 
 			this->label34->AutoSize = true;
-			this->label34->Location = System::Drawing::Point(1252, 85);
-			this->label34->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label34->Location = System::Drawing::Point(939, 69);
 			this->label34->Name = L"label34";
-			this->label34->Size = System::Drawing::Size(92, 17);
+			this->label34->Size = System::Drawing::Size(68, 13);
 			this->label34->TabIndex = 98;
 			this->label34->Text = L"Osoby razem";
 			// 
 			// label35
 			// 
 			this->label35->AutoSize = true;
-			this->label35->Location = System::Drawing::Point(487, 208);
-			this->label35->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label35->Location = System::Drawing::Point(365, 169);
 			this->label35->Name = L"label35";
-			this->label35->Size = System::Drawing::Size(92, 17);
+			this->label35->Size = System::Drawing::Size(68, 13);
 			this->label35->TabIndex = 99;
 			this->label35->Text = L"Osoby razem";
 			// 
 			// label36
 			// 
 			this->label36->AutoSize = true;
-			this->label36->Location = System::Drawing::Point(1264, 354);
-			this->label36->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label36->Location = System::Drawing::Point(948, 288);
 			this->label36->Name = L"label36";
-			this->label36->Size = System::Drawing::Size(92, 17);
+			this->label36->Size = System::Drawing::Size(68, 13);
 			this->label36->TabIndex = 100;
 			this->label36->Text = L"Osoby razem";
 			// 
 			// label37
 			// 
 			this->label37->AutoSize = true;
-			this->label37->Location = System::Drawing::Point(487, 497);
-			this->label37->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label37->Location = System::Drawing::Point(365, 404);
 			this->label37->Name = L"label37";
-			this->label37->Size = System::Drawing::Size(92, 17);
+			this->label37->Size = System::Drawing::Size(68, 13);
 			this->label37->TabIndex = 101;
 			this->label37->Text = L"Osoby razem";
 			// 
 			// label38
 			// 
 			this->label38->AutoSize = true;
-			this->label38->Location = System::Drawing::Point(348, 720);
-			this->label38->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label38->Location = System::Drawing::Point(261, 585);
 			this->label38->Name = L"label38";
-			this->label38->Size = System::Drawing::Size(160, 17);
+			this->label38->Size = System::Drawing::Size(121, 13);
 			this->label38->TabIndex = 102;
 			this->label38->Text = L"Osoby które przyjechały";
 			// 
 			// label39
 			// 
 			this->label39->AutoSize = true;
-			this->label39->Location = System::Drawing::Point(1320, 581);
-			this->label39->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label39->Location = System::Drawing::Point(990, 472);
 			this->label39->Name = L"label39";
-			this->label39->Size = System::Drawing::Size(160, 17);
+			this->label39->Size = System::Drawing::Size(121, 13);
 			this->label39->TabIndex = 103;
 			this->label39->Text = L"Osoby które przyjechały";
 			// 
 			// label40
 			// 
 			this->label40->AutoSize = true;
-			this->label40->Location = System::Drawing::Point(348, 431);
-			this->label40->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label40->Location = System::Drawing::Point(261, 350);
 			this->label40->Name = L"label40";
-			this->label40->Size = System::Drawing::Size(160, 17);
+			this->label40->Size = System::Drawing::Size(121, 13);
 			this->label40->TabIndex = 104;
 			this->label40->Text = L"Osoby które przyjechały";
 			// 
 			// label41
 			// 
 			this->label41->AutoSize = true;
-			this->label41->Location = System::Drawing::Point(1320, 303);
-			this->label41->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label41->Location = System::Drawing::Point(990, 246);
 			this->label41->Name = L"label41";
-			this->label41->Size = System::Drawing::Size(160, 17);
+			this->label41->Size = System::Drawing::Size(121, 13);
 			this->label41->TabIndex = 105;
 			this->label41->Text = L"Osoby które przyjechały";
 			// 
 			// label42
 			// 
 			this->label42->AutoSize = true;
-			this->label42->Location = System::Drawing::Point(348, 154);
-			this->label42->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label42->Location = System::Drawing::Point(261, 125);
 			this->label42->Name = L"label42";
-			this->label42->Size = System::Drawing::Size(160, 17);
+			this->label42->Size = System::Drawing::Size(121, 13);
 			this->label42->TabIndex = 106;
 			this->label42->Text = L"Osoby które przyjechały";
-			this->label42->Click += gcnew System::EventHandler(this, &MyForm::label42_Click);
 			// 
 			// label43
 			// 
 			this->label43->AutoSize = true;
-			this->label43->Location = System::Drawing::Point(1153, 658);
-			this->label43->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label43->Location = System::Drawing::Point(865, 535);
 			this->label43->Name = L"label43";
-			this->label43->Size = System::Drawing::Size(114, 17);
+			this->label43->Size = System::Drawing::Size(87, 13);
 			this->label43->TabIndex = 107;
 			this->label43->Text = L"Masa pasażerów";
 			// 
 			// label44
 			// 
 			this->label44->AutoSize = true;
-			this->label44->Location = System::Drawing::Point(12, 700);
-			this->label44->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label44->Location = System::Drawing::Point(9, 569);
 			this->label44->Name = L"label44";
-			this->label44->Size = System::Drawing::Size(235, 17);
+			this->label44->Size = System::Drawing::Size(176, 13);
 			this->label44->TabIndex = 108;
 			this->label44->Text = L"Stwórz pasażera jadącego na piętro";
 			// 
 			// label45
 			// 
 			this->label45->AutoSize = true;
-			this->label45->Location = System::Drawing::Point(1529, 363);
-			this->label45->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label45->Location = System::Drawing::Point(1147, 295);
 			this->label45->Name = L"label45";
-			this->label45->Size = System::Drawing::Size(235, 17);
+			this->label45->Size = System::Drawing::Size(176, 13);
 			this->label45->TabIndex = 109;
 			this->label45->Text = L"Stwórz pasażera jadącego na piętro";
 			// 
 			// label46
 			// 
 			this->label46->AutoSize = true;
-			this->label46->Location = System::Drawing::Point(12, 421);
-			this->label46->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label46->Location = System::Drawing::Point(9, 342);
 			this->label46->Name = L"label46";
-			this->label46->Size = System::Drawing::Size(235, 17);
+			this->label46->Size = System::Drawing::Size(176, 13);
 			this->label46->TabIndex = 110;
 			this->label46->Text = L"Stwórz pasażera jadącego na piętro";
 			// 
 			// label47
 			// 
 			this->label47->AutoSize = true;
-			this->label47->Location = System::Drawing::Point(16, 164);
-			this->label47->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label47->Location = System::Drawing::Point(12, 133);
 			this->label47->Name = L"label47";
-			this->label47->Size = System::Drawing::Size(235, 17);
+			this->label47->Size = System::Drawing::Size(176, 13);
 			this->label47->TabIndex = 111;
 			this->label47->Text = L"Stwórz pasażera jadącego na piętro";
 			// 
 			// label48
 			// 
 			this->label48->AutoSize = true;
-			this->label48->Location = System::Drawing::Point(1529, 68);
-			this->label48->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label48->Location = System::Drawing::Point(1147, 55);
 			this->label48->Name = L"label48";
-			this->label48->Size = System::Drawing::Size(235, 17);
+			this->label48->Size = System::Drawing::Size(176, 13);
 			this->label48->TabIndex = 112;
 			this->label48->Text = L"Stwórz pasażera jadącego na piętro";
 			// 
 			// label49
 			// 
 			this->label49->AutoSize = true;
-			this->label49->Location = System::Drawing::Point(615, 577);
-			this->label49->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label49->Location = System::Drawing::Point(461, 469);
 			this->label49->Name = L"label49";
-			this->label49->Size = System::Drawing::Size(57, 17);
+			this->label49->Size = System::Drawing::Size(43, 13);
 			this->label49->TabIndex = 113;
 			this->label49->Text = L"Piętro 0";
 			// 
 			// label50
 			// 
 			this->label50->AutoSize = true;
-			this->label50->Location = System::Drawing::Point(1153, 431);
-			this->label50->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label50->Location = System::Drawing::Point(865, 350);
 			this->label50->Name = L"label50";
-			this->label50->Size = System::Drawing::Size(57, 17);
+			this->label50->Size = System::Drawing::Size(43, 13);
 			this->label50->TabIndex = 114;
 			this->label50->Text = L"Piętro 1";
 			// 
 			// label51
 			// 
 			this->label51->AutoSize = true;
-			this->label51->Location = System::Drawing::Point(615, 303);
-			this->label51->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label51->Location = System::Drawing::Point(461, 246);
 			this->label51->Name = L"label51";
-			this->label51->Size = System::Drawing::Size(57, 17);
+			this->label51->Size = System::Drawing::Size(43, 13);
 			this->label51->TabIndex = 115;
 			this->label51->Text = L"Piętro 2";
 			// 
 			// label52
 			// 
 			this->label52->AutoSize = true;
-			this->label52->Location = System::Drawing::Point(1153, 201);
-			this->label52->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label52->Location = System::Drawing::Point(865, 163);
 			this->label52->Name = L"label52";
-			this->label52->Size = System::Drawing::Size(57, 17);
+			this->label52->Size = System::Drawing::Size(43, 13);
 			this->label52->TabIndex = 116;
 			this->label52->Text = L"Piętro 3";
 			// 
 			// label53
 			// 
 			this->label53->AutoSize = true;
-			this->label53->Location = System::Drawing::Point(615, 90);
-			this->label53->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label53->Location = System::Drawing::Point(461, 73);
 			this->label53->Name = L"label53";
-			this->label53->Size = System::Drawing::Size(57, 17);
+			this->label53->Size = System::Drawing::Size(43, 13);
 			this->label53->TabIndex = 117;
 			this->label53->Text = L"Piętro 4";
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1795, 802);
+			this->ClientSize = System::Drawing::Size(1346, 652);
 			this->Controls->Add(this->label53);
 			this->Controls->Add(this->label52);
 			this->Controls->Add(this->label51);
@@ -1575,7 +1460,6 @@ private: System::Windows::Forms::Timer^  timer1;
 			this->Controls->Add(this->ekran_pietro);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
-			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
@@ -1887,6 +1771,5 @@ private: System::Void Liczniki_Tick(System::Object^  sender, System::EventArgs^ 
 	this->Masa->Text = Convert::ToString(ciezar);
 
 }
-
 };
 }
